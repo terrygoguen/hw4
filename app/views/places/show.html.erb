@@ -9,6 +9,15 @@
   <h3><%= post["title"] %></h3>
   <h4><%= post["posted_on"] %></h4>
   
+  <style>
+
+    display: grid; 
+    grid-gap: 10px;
+    grid-template-columns: 150px 150px 150px;
+
+  </style>
+
+  <div class >
   <% if post.uploaded_image.attached? %>
     <img src="<%= url_for(post.uploaded_image) %>" class="img-fluid">
   <% else %>
